@@ -41,7 +41,7 @@ class operacionAritmetica(Expresion):
         print("Nodos hijos: ", nodo1,",", nodo2)
 
         print("=" * 30)
-        print("tipo: ", self.tipo)
+        print("Operación: ", self.tipo)
         print("v1: ", v1)
         print("v2: ", v2)
   

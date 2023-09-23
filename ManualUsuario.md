@@ -41,6 +41,7 @@ Además tenemos los botones:
 **Analizar**
 
  Analizará el texto que se muestra en pantalla y mostrará los elementos reconocidos.
+![ventanaPrincipal](analizar.png)
 
 **Reporte**
 

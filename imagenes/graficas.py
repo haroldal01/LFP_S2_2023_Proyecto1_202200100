@@ -9,13 +9,7 @@ class Diagrama:
         self.counter = 0
 
     def aggconfiguracion(self, confg):
-        self.dot.attr(
-            "node",
-            style="filled",
-            fillcolor=confg["fondo"],
-            fontcolor=confg["fuente"],
-            shape=confg["forma"],
-        )
+        self.dot.attr("node",style="filled",fillcolor=confg["fondo"],fontcolor=confg["fuente"],shape=confg["forma"],)
 
     def agregar(self, valor):
         nombre = f"nodo{self.counter}"
