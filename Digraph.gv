@@ -1,0 +1,11 @@
+// Graph 20230922-202215
+digraph {
+	node [fillcolor=purple fontcolor=yellow shape=ellipse style=filled]
+	nodo4 [label=10]
+	nodo5 [label=30]
+	nodo6 [label="seno\n-0.99"]
+	nodo6 -> nodo5
+	nodo7 [label="suma\n9"]
+	nodo7 -> nodo4
+	nodo7 -> nodo6
+}

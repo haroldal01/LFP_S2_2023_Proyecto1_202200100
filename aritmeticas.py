@@ -25,28 +25,28 @@ class operacionAritmetica(Expresion):
         if isinstance(self.v1, Expresion):
             v1 = self.v1.interpretar()
             nodo1 = diagrama.obtener_ultimo_nodo()
-            print("RESULTADO: ", v1)
+            print("Resultado: ", v1)
         else:
             v1 = self.v1
             nodo1 = diagrama.agregar(str(v1))
         if isinstance(self.v2, Expresion):
             v2 = self.v2.interpretar()
             nodo2 = diagrama.obtener_ultimo_nodo()
-            print("RESULTADO: ", v2)
+            print("Resultado: ", v2)
         else:
             v2 = self.v2
             nodo2 = diagrama.agregar(str(v2))
 
-        print("OPERCION: ", self.tipo)
-        print("NODOS HIJOS: ", nodo1, nodo2)
+        print("Operación: ", self.tipo)
+        print("Nodos hijos: ", nodo1,",", nodo2)
 
         print("=" * 30)
         print("tipo: ", self.tipo)
         print("v1: ", v1)
         print("v2: ", v2)
-        print("="*30)
+  
 
-        
+
         resultado = None
         if self.tipo == "suma":
             resultado = v1 + v2
@@ -86,7 +86,7 @@ class operacionAritmetica(Expresion):
     def __str__(self) -> str:
         return (
             super().__str__()
-            + " tipo: "
+            + " Operación: "
             + self.tipo
             + " v1: "
             + str(self.v1)

@@ -99,6 +99,7 @@ class Interfaz(tk.Tk):
         self.scroll = ScrollText(self)
         self.scroll.pack()
         self.after(200, self.scroll.redraw())
+        self.resizable(0,0)
 
         self.menu = Menu(self)
         self.config(menu=self.menu)

@@ -93,7 +93,7 @@ def entradat(entrada):
             token = Token(number, fila, columna)
             tokens.append(token)
         else:
-            print("caracter desconocido:",char,"en fila:",fila,"columna:",columna) 
+            print("caracter desconocido:",char,"en fila:",fila,"en columna:",columna) 
             error = Error(char,fila,columna) #se inicializa la clase error
             errores.append(error)
             i += 1
@@ -155,7 +155,7 @@ def analizar(entrada):
     diagrama.aggconfiguracion(config)
     instrucciones = crear_instrucciones()
     for i in instrucciones:
-        print("RESULTADO INSTRUCCION: ", i.interpretar())
+        print("Resultado: ", i.interpretar())
 
     return diagrama
 
@@ -165,7 +165,7 @@ def reportar(entrada):
     diagrama.aggconfiguracion(config)
     instrucciones = crear_instrucciones()
     for i in instrucciones:
-        print("RESULTADO INSTRUCCION: ", i.interpretar())
+        print("Resultado: ", i.interpretar())
     return diagrama     
 
 

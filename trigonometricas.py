@@ -25,9 +25,9 @@ class operacionTrigonometrica(Expresion):
             nodo = diagrama.agregar(str(valor))
 
         print("="*30)
-        print("tipo: ", self.tipo)
+        print("Operación: ", self.tipo)
         print("valor: ", valor)
-        print("="*30)
+       
 
         resultado = None
 
